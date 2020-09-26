@@ -1,14 +1,14 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from "react"
+import { Link } from "gatsby"
 
-import SEO from "../components/seo";
-import Header from "../components/header";
-import Navbar from "../components/navbar";
-import Section from "../components/section";
-import Footer from "../components/footer";
-import SecuritySVG from "../svg/security";
-import ReportingSVG from '../svg/reporting';
-import "../styling/index.scss";
+import SEO from "../components/seo"
+import Header from "../components/header"
+import Navbar from "../components/navbar"
+import Section from "../components/section"
+import Footer from "../components/footer"
+import { ReactComponent as SecuritySVG } from "../svg/security"
+import { ReactComponent as ReportingSVG } from "../svg/reporting"
+import "../styling/index.scss"
 
 const IndexPage = () => {
   const links = [
@@ -36,7 +36,7 @@ const IndexPage = () => {
       <small>CONNECT</small>
       <br />↘ WITH US
     </Link>,
-  ];
+  ]
 
   const reporting = [
     <li>Full Transaction Lifecycle Reporting</li>,
@@ -44,19 +44,19 @@ const IndexPage = () => {
     <li>Multiple Merchant Locations</li>,
     <li>Automatic Reconciliation</li>,
     <li>User Permission Management</li>,
-  ];
+  ]
 
   const security = [
     <li>Tokenization</li>,
     <li>P2PE</li>,
     <li>PCI Compliance</li>,
-  ];
+  ]
 
   const integrations = [
     <li>ISV Integrations | Partnership</li>,
     <li>Developer Tools | APIs, Support</li>,
     <li>Enterprise Solutions | Oracle, SAP</li>,
-  ];
+  ]
 
   return (
     <>
@@ -69,7 +69,7 @@ const IndexPage = () => {
         serviceName="REPORTING"
         headerText="Everything a business needs to view and manage transactions."
       >
-      <ReportingSVG />
+        <ReportingSVG />
         {[...reporting]}
       </Section>
 
@@ -78,7 +78,7 @@ const IndexPage = () => {
         serviceName="SECURITY"
         headerText="Protect transactions and reduce PCI scope with the most effective security solutions in the industry."
       >
-      <SecuritySVG />
+        <SecuritySVG />
         {security}
       </Section>
 
@@ -92,7 +92,7 @@ const IndexPage = () => {
 
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage
