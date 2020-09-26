@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.ttf") format('ttf'),
-       url("../fonts/Montserrat-Medium.ttf") format('ttf'),
-       url("../fonts/Montserrat-SemiBold.ttf") format('ttf');
+    url("../fonts/Montserrat-Medium.ttf") format('ttf'),
+    url("../fonts/Montserrat-SemiBold.ttf") format('ttf');
 }
 
 @font-face {
   font-family: 'Nunito Sans';
   src: url("../fonts/NunitoSans-Medium.ttf"),
-       url("../fonts/NunitoSans-Bold.ttf"),
-       url("../fonts/NunitoSans-SemiBold.ttf");
+    url("../fonts/NunitoSans-Bold.ttf"),
+    url("../fonts/NunitoSans-SemiBold.ttf");
 }
 
 
@@ -26,8 +26,6 @@ $grey: #8a96a0;
 $dark-grey: #454b52;
 $dark: #1d1f22ee;
 $black: #060606dd;
-$primary-font: 'Montserrat';
-$secondary-font: 'Nunito Sans';
 
 
 :root {
@@ -39,13 +37,16 @@ $secondary-font: 'Nunito Sans';
   -webkit-text-size-adjust: 100%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -71,7 +72,8 @@ a {
   text-decoration: none;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   outline-width: 0;
   text-decoration: none;
 }
@@ -100,9 +102,13 @@ button {
   text-transform: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0.75rem 0.5rem;
-  font-family: $secondary-font;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
   font-weight: bold;
@@ -139,7 +145,8 @@ ul {
   list-style-image: none;
 }
 
-li, li>p {
+li,
+li>p {
   margin-bottom: calc(1.45rem / 2);
 }
 
