@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `CardConnectSF`,
+    title: `Card Connect SF`,
     description: `Built by Klutch dev and MadJoy.dev`,
     author: `Kyle "Klutch" Leary | MadJoy.dev`,
   },
