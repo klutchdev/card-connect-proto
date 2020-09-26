@@ -1,0 +1,91 @@
+$primary-light: #00eaff;
+$primary-color: #0aafc5;
+$primary-dark: #00c3ff;
+$accent-light: #0a4a6e;
+$accent-color: #173750;
+$accent-dark: #192630;
+$white: #fefefe;
+$light: #e4ecf4ee;
+$light-grey: #b0bec9fd;
+$grey: #8a96a0;
+$dark-grey: #454b52;
+$dark: #1d1f22dd;
+$black: #060606dd;
+$primary-font: 'Montserrat';
+$secondary-font: 'Nunito Sans';
+
+body {
+  background: #f5e9ffaa;
+}
+
+.form-container {
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem 0.75rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: $dark;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 1.2rem;
+}
+
+.form-button-wrapper {
+  margin: 0;
+  padding: 3rem 1rem;
+}
+
+.form-button {
+  margin: 0 auto;
+  font-family: 'Nunito Sans';
+  font-size: 1.25rem;
+  font-weight: bold;
+  position: relative;
+  width: 95%;
+  height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $accent-light;
+  box-shadow: #19263060 2px 2px 12px;
+  color: $light;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.form-button:hover {
+  box-shadow: #19263045 1px 1px 8px;
+  background: $accent-light;
+  border: none;
+  cursor: pointer;
+  color: $white;
+}
+
+button {
+  font-family: inherit;
+  line-height: normal;
+  font-size: 100%;
+  margin: 0;
+}
+
+input {
+  margin: 0;
+  margin-bottom: 1rem;
+  border-radius:0;
+  text-align: left;
+  padding: 0.25rem 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  width: 95%;
+  background-color: transparent;
+  border: 0 transparent solid;
+  border-bottom: 1px solid #18181890;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1rem;
+  opacity: 0.45;
+}

@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.ttf") format('ttf'),
+       url("../fonts/Montserrat-Medium.ttf") format('ttf'),
+       url("../fonts/Montserrat-SemiBold.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("../fonts/NunitoSans-Medium.ttf"),
+       url("../fonts/NunitoSans-Bold.ttf"),
+       url("../fonts/NunitoSans-SemiBold.ttf");
+}
+
+
+$primary-light: #00eaff;
+$primary-color: #0aafc5;
+$primary-dark: #00c3ff;
+$accent-light: #0a4a6e;
+$accent-color: #173750;
+$accent-dark: #192630;
+$white: #fefefe;
+$light: #e4ecf4;
+$light-grey: #b0bec9fd;
+$grey: #8a96a0;
+$dark-grey: #454b52;
+$dark: #1d1f22ee;
+$black: #060606dd;
+$primary-font: 'Montserrat';
+$secondary-font: 'Nunito Sans';
+
+
+:root {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer
+}
+
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+  text-decoration: none;
+}
+
+
+img {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  max-width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+hr {
+  box-sizing: content-box;
+  overflow: visible;
+  background: #00000033;
+  border: none;
+  height: 1px;
+}
+
+button {
+  text-transform: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0.75rem 0.5rem;
+  font-family: $secondary-font;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  font-weight: bold;
+  color: $black;
+}
+
+h1 {
+  font-size: 2.35rem;
+}
+
+h2 {
+  font-size: 2.35rem;
+}
+
+h3 {
+  font-size: 1.85rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+ul {
+  margin: 0 0 1.45rem 1.45rem;
+  list-style-position: outside;
+  list-style-image: none;
+}
+
+li, li>p {
+  margin-bottom: calc(1.45rem / 2);
+}
+
+li>ul {
+  margin: calc(1.45rem / 2) 0 calc(1.45rem / 2) 0;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}

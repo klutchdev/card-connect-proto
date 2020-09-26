@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.ttf") format('ttf'),
+       url("../fonts/Montserrat-Medium.ttf") format('ttf'),
+       url("../fonts/Montserrat-SemiBold.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("../fonts/NunitoSans-Medium.ttf"),
+       url("../fonts/NunitoSans-Bold.ttf"),
+       url("../fonts/NunitoSans-SemiBold.ttf");
+}
+
+$primary-light: #00eaff;
+$primary-color: #0aafc5;
+$primary-dark: #00c3ff;
+$accent-light: #0a4a6e;
+$accent-color: #173750;
+$accent-dark: #192630;
+$white: #fefefe;
+$light: #e4ecf4ee;
+$light-grey: #b0bec9fd;
+$grey: #8a96a0;
+$dark-grey: #454b52;
+$dark: #1d1f22dd;
+$black: #060606dd;
+$primary-font: 'Montserrat';
+$secondary-font: 'Nunito Sans';
+
+nav {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  z-index: 9;
+  display: flex;
+  position: relative;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.brand {
+  font-family: 'Nunito Sans','Helvetica Neue','Helvetica','Roboto','Arial', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+  transition: all .3s ease-in-out;
+}
+
+.brand svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+.sign-up {
+  font-family: 'Nunito Sans';
+  font-size: 1.1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  width: 4.75rem;
+  height: 1.6rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $accent-color;
+  box-shadow: #19263045 2px 2px 8px;
+  color: $light;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: all 300ms ease;
+}
