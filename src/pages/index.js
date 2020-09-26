@@ -6,8 +6,8 @@ import Header from "../components/header"
 import Navbar from "../components/navbar"
 import Section from "../components/section"
 import Footer from "../components/footer"
-import { ReactComponent as SecuritySVG } from "../svg/security"
-import { ReactComponent as ReportingSVG } from "../svg/reporting"
+// import { ReactComponent as SecuritySVG } from "../svg/security"
+// import { ReactComponent as ReportingSVG } from "../svg/reporting"
 import "../styling/index.scss"
 
 const IndexPage = () => {
@@ -69,7 +69,7 @@ const IndexPage = () => {
         serviceName="REPORTING"
         headerText="Everything a business needs to view and manage transactions."
       >
-        <ReportingSVG />
+        {/* <ReportingSVG /> */}
         {[...reporting]}
       </Section>
 
@@ -78,7 +78,7 @@ const IndexPage = () => {
         serviceName="SECURITY"
         headerText="Protect transactions and reduce PCI scope with the most effective security solutions in the industry."
       >
-        <SecuritySVG />
+        {/* <SecuritySVG /> */}
         {security}
       </Section>
 
