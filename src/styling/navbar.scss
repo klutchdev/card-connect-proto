@@ -24,8 +24,8 @@ nav {
 }
 
 .nav {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -40,7 +40,7 @@ nav {
 }
 
 .brand svg {
-  width: 30%;
+  width: 50%;
   max-width: 100%;
 }
 
@@ -58,7 +58,7 @@ button {
   font-family: 'barlow';
   position: absolute;
   top: 1rem;
-  right: 5%;
+  right: 4rem;
   width: 6rem;
   height: 1.75rem;
   vertical-align: middle;
@@ -67,4 +67,5 @@ button {
   color: $light;
   cursor: pointer;
   transition: all 300ms ease;
+  margin-right: 0.5rem;
 }
