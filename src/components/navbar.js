@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import { ReactComponent as Brand } from "../brand.svg"
 import "../styling/navbar.scss"
 
-function Navbar({ children, hideSignUp }) {
+const Navbar = ({ children, hideSignUp }) => {
   const [open, setOpen] = useState(false)
   const node = useRef()
 
