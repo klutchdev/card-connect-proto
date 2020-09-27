@@ -2,8 +2,9 @@ import React from "react"
 import { string, any } from "prop-types"
 import "../styling/section.scss"
 
-const Section = ({ className, serviceName, headerText, children }) => (
+const Section = ({ bgName, className, serviceName, headerText, children }) => (
   <section>
+    <div className={bgName} />
     <div className={className}>
       <h4>{serviceName}</h4>
       <hr />
@@ -14,6 +15,7 @@ const Section = ({ className, serviceName, headerText, children }) => (
 )
 
 Section.propTypes = {
+  bgName: string.isRequired,
   className: string.isRequired,
   serviceName: string.isRequired,
   headerText: string.isRequired,

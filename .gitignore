@@ -67,11 +67,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
-src/fonts
-src/images
-src/svg
-.prettierignore
-.prettierrc
 content.txt
 scratch.css
 section-content.txt

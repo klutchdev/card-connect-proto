@@ -11,31 +11,33 @@ function SignUpPage() {
   const links = [
     <Link to="/terminal">
       <small>COUNTERTOP</small>
-      <br />↘ TERMINAL
+      <br />
+      TERMINAL
     </Link>,
     <Link to="/virtual">
       <small>VIRTUAL</small>
-      <br />↘ TERMINAL
+      <br />
+      TERMINAL
     </Link>,
     <Link to="/integrations">
       <small>INTEGRATIONS</small>
-      <br />↘ ADD ONS
+      <br />
+      ADD ONS
     </Link>,
     <Link to="/hosted">
       <small>HOSTED PAYMENT</small>
-      <br />↘ PAGE[HPP]
+      <br />
+      PAGE[HPP]
     </Link>,
     <Link to="/mobile">
       <small>CARDCONNECT</small>
-      <br />↘ MOBILE APP
+      <br /> MOBILE APP
     </Link>,
   ]
 
   return (
     <>
-      <Navbar hideSignUp={ true }>
-      { links }
-      </Navbar>
+      <Navbar hideSignUp={true}>{links}</Navbar>
       <SEO title="Sign up" />
       <ContactForm />
     </>

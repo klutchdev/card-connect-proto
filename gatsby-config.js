@@ -14,8 +14,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `CardConnectSF`,
-        short_name: `CardConnectSF`,
+        name: `card-connect-sf`,
+        short_name: `ccsf`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -27,7 +27,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`barlow`, `noto sans`, `rubik`],
-        display: "swap",
       },
     },
   ],

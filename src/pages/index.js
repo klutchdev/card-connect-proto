@@ -7,44 +7,9 @@ import Header from "../components/header"
 import Navbar from "../components/navbar"
 import Section from "../components/section"
 import Footer from "../components/footer"
-// import { ReactComponent as SecuritySVG } from "../svg/security"
-// import { ReactComponent as ReportingSVG } from "../svg/reporting"
 import "../styling/index.scss"
 
 function IndexPage() {
-  const links = [
-    <Link to="/terminal">
-      <small>COUNTERTOP</small>
-      <br />
-      TERMINAL
-    </Link>,
-    <Link to="/virtual">
-      <small>VIRTUAL</small>
-      <br />
-      TERMINAL
-    </Link>,
-    <Link to="/integrations">
-      <small>INTEGRATIONS</small>
-      <br />
-      ADD ONS
-    </Link>,
-    <Link to="/hosted">
-      <small>HOSTED PAYMENT</small>
-      <br />
-      PAGE[HPP]
-    </Link>,
-    <Link to="/mobile">
-      <small>CARDCONNECT</small>
-      <br />
-      MOBILE APP
-    </Link>,
-    <Link to="/signup">
-      <small>CONNECT</small>
-      <br />
-      WITH US
-    </Link>,
-  ]
-
   const reporting = [
     <li>Full Transaction Lifecycle Reporting</li>,
     <li>Mobile Optimization</li>,
@@ -67,17 +32,48 @@ function IndexPage() {
 
   return (
     <>
-      <Navbar hideSignUp={false}>{links}</Navbar>
-
+      <Navbar hideSignUp={false}>
+        <Link to="/terminal">
+          <small>COUNTERTOP</small>
+          <br />
+          TERMINAL
+        </Link>
+        <Link to="/virtual">
+          <small>VIRTUAL</small>
+          <br />
+          TERMINAL
+        </Link>
+        <Link to="/integrations">
+          <small>INTEGRATIONS</small>
+          <br />
+          ADD ONS
+        </Link>
+        <Link to="/hosted">
+          <small>HOSTED PAYMENT</small>
+          <br />
+          PAGE[HPP]
+        </Link>
+        <Link to="/mobile">
+          <small>CARDCONNECT</small>
+          <br />
+          MOBILE APP
+        </Link>
+        <Link to="/signup">
+          <small>CONNECT</small>
+          <br />
+          WITH US
+        </Link>
+      </Navbar>
       <SEO title="Home" />
       <Header />
 
       <Section
         headerText="Everything a business needs to view and manage transactions."
         className="reporting"
-        serviceName="REPORTING"
+        bgName="reporting-bg"
+        serviceName="Reporting"
       >
-        {reporting}
+        {[...reporting]}
       </Section>
 
       <Section
@@ -85,7 +81,7 @@ function IndexPage() {
         className="security"
         serviceName="SECURITY"
       >
-        {security}
+        {[...security]}
       </Section>
 
       <Section
@@ -93,9 +89,8 @@ function IndexPage() {
         className="integrations"
         serviceName="INTEGRATIONS"
       >
-        {integrations}
+        {[...integrations]}
       </Section>
-
       <Footer />
     </>
   )
