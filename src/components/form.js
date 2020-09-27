@@ -3,11 +3,9 @@ import { useForm } from "react-hook-form"
 
 import "../styling/form.scss"
 
-const ContactForm = () => {
+function ContactForm() {
   const { handleSubmit, register, errors } = useForm()
-  const onSubmit = values => {
-    console.log(values)
-  }
+  const onSubmit = (values) => console.log(values)
 
   return (
     <div className="form-container">
@@ -34,7 +32,7 @@ const ContactForm = () => {
 
           <div className="company">
             <label>
-              and I'm from
+              and I`&apos;`m from
               <input
                 type="text"
                 name="company"

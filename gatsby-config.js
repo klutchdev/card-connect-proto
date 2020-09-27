@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = {
   siteMetadata: {
     title: `Card Connect SF`,
@@ -19,7 +20,14 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        // icon: ``, // This path is relative to the root of the site.
+        // icon: ``,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`barlow`, `noto sans`, `rubik`],
+        display: "swap",
       },
     },
   ],

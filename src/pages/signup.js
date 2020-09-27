@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React from "react"
 import { Link } from "gatsby"
 
@@ -6,7 +7,7 @@ import Navbar from "../components/navbar"
 import ContactForm from "../components/form"
 import "../styling/index.scss"
 
-const SignUpPage = () => {
+function SignUpPage() {
   const links = [
     <Link to="/terminal">
       <small>COUNTERTOP</small>
@@ -22,7 +23,7 @@ const SignUpPage = () => {
     </Link>,
     <Link to="/hosted">
       <small>HOSTED PAYMENT</small>
-      <br />↘ PAGE [HPP]
+      <br />↘ PAGE[HPP]
     </Link>,
     <Link to="/mobile">
       <small>CARDCONNECT</small>
@@ -32,7 +33,9 @@ const SignUpPage = () => {
 
   return (
     <>
-      <Navbar children={links} hideSignUp={true} color=" #173750" />
+      <Navbar hideSignUp={ true }>
+      { links }
+      </Navbar>
       <SEO title="Sign up" />
       <ContactForm />
     </>
