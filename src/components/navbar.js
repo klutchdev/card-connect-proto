@@ -15,9 +15,9 @@ function Navbar({ children, hideSignUp }) {
   return (
     <nav>
       <div className="nav">
-        <a href="/" className="brand">
+        <Link to="/" className="brand">
           <Brand />
-        </a>
+        </Link>
         <div ref={node}>
           <MenuToggle open={open} setOpen={setOpen} />
           <Menu open={open} setOpen={setOpen}>
@@ -186,7 +186,7 @@ MenuToggle.propTypes = {
 
 Navbar.propTypes = {
   hideSignUp: bool.isRequired,
-  children: any,
+  children: any.isRequired,
 }
 
 export default Navbar
