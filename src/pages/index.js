@@ -252,7 +252,7 @@ function IndexPage() {
         className="reporting"
         bgName="reporting-bg"
         serviceName="Reporting"
-        svgIcon={reportingSVG}
+        // svgIcon={reportingSVG}
       >
         {[...reporting]}
       </Section>
