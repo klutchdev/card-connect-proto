@@ -3,41 +3,47 @@ $dark: #101113ee;
 section {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100vw;
   margin: 0;
+  height: 100%;
+  max-width: 100vw;
   padding: 0;
   word-wrap: break-word;
 }
 
-.reporting,
-.security,
-.integrations {
-  padding: 1rem;
-  margin-top: 0.5rem;
-}
-
 section h4 {
-  margin: 2rem 0 0 0;
-  padding: 1rem 0.5;
-  font-family: 'barlow';
-  font-size: 2.75rem;
+  margin: 1rem 0.75rem;
+  padding: 0;
+  font-family: 'Barlow';
+  font-size: 2rem;
   font-weight: 600;
   color: $dark;
 }
 
 section h5 {
-  margin: 0;
+  margin: 0 0.75rem;
   padding: 0;
-  font-family: 'barlow';
+  font-family: 'Quicksand';
   font-size: 1.25rem;
   color: $dark;
 }
 
 li {
-  margin: 0;
+  margin: 0 0.75rem;
   padding: 0.25rem 0;
   list-style: none;
   font-family: 'rubik';
   color: $dark;
+}
+
+.section-svg {
+  padding: 0;
+  margin: 0 auto;
+  width: 75vw;
+}
+
+.section-svg svg {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

@@ -42,8 +42,8 @@ function Navbar({ hideSignUp, children }) {
 
 const StyledMenu = styled.nav`
   z-index: 9;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -54,7 +54,7 @@ const StyledMenu = styled.nav`
   text-align: left;
   background: #fefefefc;
   box-shadow: none;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(110%)")};
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
 
   a {
     margin: 0;
@@ -125,8 +125,8 @@ const StyledMenuToggle = styled.button`
   ${"" /* margin-right: 5vw; */}
   padding: 0;
   position: ${({ open }) => (open ? "fixed" : "absolute")};
-  top: 0.9rem;
-  right: 15vw;
+  top: 1rem;
+  right: 10vw;
   width: 2rem;
   height: 2rem;
   display: flex;

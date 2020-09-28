@@ -2,8 +2,17 @@ import React from "react"
 import { string, any } from "prop-types"
 import "../styling/section.scss"
 
-const Section = ({ bgName, className, serviceName, headerText, children }) => (
+const Section = ({
+  bgName,
+  className,
+  serviceName,
+  headerText,
+  children,
+  svgIcon,
+}) => (
   <section>
+    <br />
+    <div className="section-svg">{svgIcon}</div>
     <div className={bgName} />
     <div className={className}>
       <h4>{serviceName}</h4>
@@ -20,6 +29,7 @@ Section.propTypes = {
   className: string.isRequired,
   serviceName: string.isRequired,
   headerText: string.isRequired,
+  svgIcon: string.isRequired,
   children: any,
 }
 

@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`barlow`, `noto sans`, `rubik`],
+        fonts: [`Barlow`, `Noto Sans`, `Rubik`, `Karla`, `Quicksand`],
       },
     },
   ],
