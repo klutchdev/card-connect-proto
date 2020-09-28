@@ -9,6 +9,7 @@ const Section = ({ bgName, className, serviceName, headerText, children }) => (
       <h4>{serviceName}</h4>
       <hr />
       <h5>{headerText}</h5>
+      <hr />
       <ul>{children}</ul>
     </div>
   </section>

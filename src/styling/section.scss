@@ -1,5 +1,8 @@
+$dark: #101113ee;
+
 section {
   display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100vw;
   margin: 0;
@@ -7,10 +10,28 @@ section {
   word-wrap: break-word;
 }
 
-ul {
+.reporting,
+.security,
+.integrations {
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+section h4 {
+  margin: 2rem 0 0 0;
+  padding: 1rem 0.5;
+  font-family: 'barlow';
+  font-size: 2.75rem;
+  font-weight: 600;
+  color: $dark;
+}
+
+section h5 {
   margin: 0;
-  padding: 0.25rem 0;
-  list-style: none;
+  padding: 0;
+  font-family: 'barlow';
+  font-size: 1.25rem;
+  color: $dark;
 }
 
 li {
@@ -18,4 +39,5 @@ li {
   padding: 0.25rem 0;
   list-style: none;
   font-family: 'rubik';
+  color: $dark;
 }

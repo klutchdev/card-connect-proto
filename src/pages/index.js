@@ -79,7 +79,8 @@ function IndexPage() {
       <Section
         headerText="Protect transactions and reduce PCI scope with the most effective security solutions in the industry."
         className="security"
-        serviceName="SECURITY"
+        bgName="security-bg"
+        serviceName="Security"
       >
         {[...security]}
       </Section>
@@ -87,7 +88,8 @@ function IndexPage() {
       <Section
         headerText="Easily add secure payment acceptance capabilities into any application"
         className="integrations"
-        serviceName="INTEGRATIONS"
+        bgName="integrations-bg"
+        serviceName="Integrations"
       >
         {[...integrations]}
       </Section>

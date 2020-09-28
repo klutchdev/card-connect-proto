@@ -8,11 +8,9 @@ const Footer = () => (
     <div className="copyright">
       <p>
         <Link to="/privacy-policy">Privacy policy</Link>{" "}
-        {` | © ${new Date().getFullYear()} copyright CardConnectSF.com`}
+        {` | © ${new Date().getFullYear()} copyright Card Connect SF`}
       </p>
-      <small>
-        CardConnectSF is an independent sales division of CardConnect,inc.{" "}
-      </small>
+      <small>an independent sales division of CardConnect, inc. </small>
     </div>
   </footer>
 )

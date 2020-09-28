@@ -15,12 +15,12 @@ $black: #060606dd;
 
 
 footer {
-  height: 25vh;
-  width: 100%;
-  padding: 1rem 1rem 0.25rem 1rem;
+  height: 10vh;
+  width: 100vw;
+  padding: 0.75rem;
   position: relative;
-  background-color: #192630;
-  color: $light-grey;
+  // background-color: #22455f;
+  color: $dark;
   justify-content: left;
   word-wrap: break-word;
 }
