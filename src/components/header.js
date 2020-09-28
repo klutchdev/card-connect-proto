@@ -17,8 +17,7 @@ function Header() {
     <header title={data.site.siteMetadata.title}>
       <div className="gradient" />
       <h2>Make your payments</h2>
-      <h3>Simple.Affordable.Secure.</h3>
-      <h5>Serving the Bay Area for over 15 years</h5>
+      <h3>simple, affordable and secure</h3>
       <div className="header-svg">
         <svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -174,6 +173,7 @@ function Header() {
           </g>
         </svg>
       </div>
+      <h5>Serving the Bay Area for over 15 years</h5>
     </header>
   )
 }

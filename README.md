@@ -10,7 +10,7 @@
    Navigate into your new site’s directory and start it up.
 
    ```shell
-   cd my-default-starter/
+   cd card-connect/
    gatsby develop
    ```
 
@@ -18,7 +18,7 @@
 
    Your site is now running at `http://localhost:8000`!
 
-   _Note: You'll also see a second link:_`http://localhost:8000/___graphql`_.
+   _Note: You'll also see a second link:_`http://localhost:8000/___graphql`\_.
 
 ## 🧐 What's inside
 
@@ -69,4 +69,5 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 ## 🔗 Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/68ad057c-92c7-47db-af85-7fa0fa34d381/deploy-status)](https://app.netlify.com/sites/klutchdev-test-site/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:END -->
