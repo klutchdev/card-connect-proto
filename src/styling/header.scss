@@ -34,9 +34,9 @@ header h2 {
   margin: 2rem 0.5rem 0 0.5rem;
   padding: 0;
   font-family: 'Barlow';
-  font-size: 2.25rem;
-  font-weight: 600;
-  color: #111213dd;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $dark;
   animation: Opacity2 1s ease;
 }
 
@@ -44,9 +44,9 @@ header h3 {
   margin: 1rem;
   padding: 0;
   font-family: 'Rubik';
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  color: $black;
+  color: $dark;
   transition: all 700ms ease;
   animation: Opacity2 0.6s ease forwards;
 }
@@ -57,7 +57,7 @@ header h5 {
   font-family: 'Quicksand';
   font-size: 1.8rem;
   font-weight: 500;
-  color: $black;
+  color: $dark;
   transition: all 1100ms ease;
   animation: Opacity2 0.7s ease-in-out;
 }

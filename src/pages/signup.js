@@ -9,29 +9,20 @@ import "../styling/index.scss"
 
 function SignUpPage() {
   const links = [
-    <Link to="/terminal">
-      <small>COUNTERTOP</small>
+    <Link to="/">
+      <small>RETURN TO</small>
       <br />
-      TERMINAL
+      THE HOME SCREEN
     </Link>,
-    <Link to="/virtual">
-      <small>VIRTUAL</small>
+    <Link to="tel:">
+      <small>GIVE US A CALL</small>
       <br />
-      TERMINAL
+      1(800)CARD-CONNECT
     </Link>,
-    <Link to="/integrations">
-      <small>INTEGRATIONS</small>
+    <Link to="mailto: test@123.com">
+      <small>SEND US AN EMAIL</small>
       <br />
-      ADD ONS
-    </Link>,
-    <Link to="/hosted">
-      <small>HOSTED PAYMENT</small>
-      <br />
-      PAGE[HPP]
-    </Link>,
-    <Link to="/mobile">
-      <small>CARDCONNECT</small>
-      <br /> MOBILE APP
+      info@ccsf.com
     </Link>,
   ]
 

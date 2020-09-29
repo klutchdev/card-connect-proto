@@ -42,7 +42,7 @@ function Navbar({ hideSignUp, children }) {
 
 const StyledMenu = styled.nav`
   z-index: 9;
-  height: 96%;
+  height: 98vh;
   width: 96%;
   display: flex;
   flex-direction: column;
@@ -52,17 +52,17 @@ const StyledMenu = styled.nav`
   margin: 0.5rem;
   padding: 0;
   text-align: left;
-  background: #fcfcfcfc;
+  background: linear-gradient(5deg, #fcfcfc, #efeeff );
   box-shadow: none;
   overflow-y: scroll;
-  box-shadow: #06060690 -2px 2px 10px;
-  border-radius: 12px;
+  box-shadow: #06060675 -3px 3px 12px;
+  border-radius: 14px;
   transition: all 350ms ease-in-out;
-  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-105%)")};
+  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-110%)")};
 
   @media screen and (min-width: 640px) and (max-width: 1366px) {
-    width: 45vw;
-    height: 60%;
+    width: 60vw;
+    height: 70vh;
     border-radius: 14px;
   }
 
