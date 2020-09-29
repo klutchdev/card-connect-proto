@@ -62,13 +62,13 @@ const StyledMenu = styled.nav`
 
   @media screen and (min-width: 640px) and (max-width: 1366px) {
     width: 60%;
-    height: 70%;
+    height: 70vh;
     border-radius: 14px;
   }
 
   @media screen and(min-width: 1367px) and (max-width: 2580px) {
-    width: 25%;
-    height: 50%;
+    width: 25vw;
+    height: 50vh;
     border-radius: 16px;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(110%)")};
   }
