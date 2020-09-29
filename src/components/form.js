@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form"
 
 import "../styling/form.scss"
 
-function ContactForm() {
+const ContactForm = () => {
   const { handleSubmit, register, errors } = useForm()
   const onSubmit = (values) => console.log(values)
 

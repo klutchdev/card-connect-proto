@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "../styling/header.scss"
 
-function Header() {
+const Header = () => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

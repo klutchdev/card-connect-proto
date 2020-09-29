@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import "../styling/navbar.scss"
 import { any } from "prop-types"
 
-function Navbar({ hideSignUp, children }) {
+const Navbar = ({ hideSignUp, children }) => {
   const [open, setOpen] = useState(false)
   const node = useRef()
 
@@ -134,15 +134,13 @@ const StyledMenu = styled.nav`
   }
 }`
 
-function Menu({ open, children }) {
-  return (
-    <StyledMenu open={open}>
-      <h3>Explore</h3>
-      <br />
-      {children}
-    </StyledMenu>
-  )
-}
+const Menu = ({ open, children }) => (
+  <StyledMenu open={open}>
+    <h3>Explore</h3>
+    <br />
+    {children}
+  </StyledMenu>
+)
 
 const StyledMenuToggle = styled.button`
   z-index: 10;
