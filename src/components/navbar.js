@@ -42,14 +42,14 @@ const Navbar = ({ hideSignUp, children }) => {
 
 const StyledMenu = styled.nav`
   z-index: 9;
-  height: 98vh;
+  height: 90%;
   width: 96%;
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 0;
   right: 0;
-  margin: 0.5rem;
+  margin: 0.75rem;
   padding: 0;
   text-align: left;
   background: linear-gradient(5deg, #fcfcfc, #efeeff );
