@@ -42,26 +42,26 @@ function Navbar({ hideSignUp, children }) {
 
 const StyledMenu = styled.nav`
   z-index: 9;
-  height: 100%;
-  width: 100vw;
+  height: 96%;
+  width: 96%;
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 0;
   right: 0;
-  margin: 0;
+  margin: 0.5rem;
   padding: 0;
   text-align: left;
   background: #fcfcfcfc;
   box-shadow: none;
   overflow-y: scroll;
   box-shadow: #06060690 -2px 2px 10px;
-  border-radius: 16px;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  border-radius: 12px;
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(110%)")};
 
   @media screen and (min-width: 768px) and (max-width: 1366px) {
-    width: 40vw;
-    border-radius: 16px;
+    width: 32vw;
+    border-radius: 12px;
   }
 
   a {
@@ -83,8 +83,8 @@ const StyledMenu = styled.nav`
   }
 
   h2 {
-    font-size: 2rem;
-    padding: 2rem 0;
+    font-size: 2.25rem;
+    padding: 2.5rem 0;
     margin: 0;
     letter-spacing: 0.075rem;
     font-weight: 500;
@@ -135,7 +135,7 @@ const StyledMenuToggle = styled.button`
   ${"" /* margin-right: 5vw; */}
   padding: 0;
   position: ${({ open }) => (open ? "fixed" : "absolute")};
-  top: 1rem;
+  top: ${({ open }) => (open ? "1.75rem" : "1rem")};
   right: 8vw;
   width: 2rem;
   height: 2rem;
@@ -149,7 +149,7 @@ const StyledMenuToggle = styled.button`
 
   @media screen and (min-width: 768px) and (max-width: 1366px) {
     right: 4vw;
-    top: 1.25rem;
+    top: ${({ open }) => (open ? "1.5rem" : "1.25rem")};
   }
   &:focus {
     outline: none;
