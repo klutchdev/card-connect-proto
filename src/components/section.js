@@ -16,7 +16,7 @@ const Section = ({
     <div className={bgName} />
     <div className={className}>
       <h4>{serviceName}</h4>
-      <hr />
+      {/* <hr /> */}
       <h5>{headerText}</h5>
       <hr />
       <ul>{children}</ul>

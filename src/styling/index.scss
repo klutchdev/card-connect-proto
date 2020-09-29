@@ -30,6 +30,7 @@ body {
   width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
+  animation: toColor 1s both 1s;
 }
 
 button,
@@ -71,6 +72,7 @@ hr {
   background: #00000033;
   border: none;
   height: 1px;
+  transition: all 350ms ease-in-out;
 }
 
 button {
@@ -116,6 +118,7 @@ li>ul {
   padding: 0;
   margin: 0;
   margin-top: 0.75rem;
+  transition: all .9s ease-in-out;
 }
 
 .reporting-bg {
@@ -125,8 +128,10 @@ li>ul {
   position: absolute;
   width: 100%;
   height: 52vh;
-  background-color: #00a2ffbb;
+  background-color: #37b6ff8c;
   clip-path: polygon(0 4%, 0 100%, 100% 96.5%, 100% 0%, 100% 0);
+  transition: all 1.7s ease-in-out;
+  animation: bg 2s ease both 2s;
 }
 
 .security-bg {
@@ -138,6 +143,9 @@ li>ul {
   height: 44vh;
   background-color: #b05dffbb;
   clip-path: polygon(0 6%, 0 100%, 100% 96.5%, 100% 0%, 100% 0);
+  transition: all 1.8s ease-in-out;
+  animation: bg2 1.8s ease-in both 3s;
+  ;
 }
 
 .integrations-bg {
@@ -149,4 +157,53 @@ li>ul {
   height: 44vh;
   background-color: #5dffe9bb;
   clip-path: polygon(0 6%, 0 100%, 100% 95%, 100% 0%, 100% 0);
+  transition: all 3s ease-in-out;
+  animation: bg3 2.1s ease both 4s;
+  ;
+}
+
+@keyframes bg {
+  0% {
+    background-color: #6c38a0db;
+    opacity: 0;
+  }
+
+  100% {
+    background-color: #00a2ffbb;
+    opacity: 1;
+  }
+}
+
+@keyframes bg2 {
+  0% {
+    background-color: #3bb2fcdb;
+    opacity: 0;
+  }
+
+  100% {
+    background-color: #b05dffbb;
+    opacity: 1;
+  }
+}
+
+@keyframes bg3 {
+  0% {
+    background-color: #3bfcd9db;
+    opacity: 0;
+  }
+
+  100% {
+    background-color: #5dffe9bb;
+    opacity: 1;
+  }
+}
+
+@keyframes toColor {
+  0% {
+    filter: grayscale(70%);
+  }
+
+  100% {
+    filter: grayscale(0);
+  }
 }

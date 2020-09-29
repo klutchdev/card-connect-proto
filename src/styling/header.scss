@@ -34,18 +34,21 @@ header h2 {
   margin: 2rem 0.5rem 0 0.5rem;
   padding: 0;
   font-family: 'Barlow';
-  font-size: 2.15rem;
+  font-size: 2.25rem;
   font-weight: 600;
   color: #111213dd;
+  animation: Opacity2 1s ease-in-out;
 }
 
 header h3 {
   margin: 1rem;
   padding: 0;
   font-family: 'Rubik';
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 300;
   color: $black;
+  transition: all 700ms ease;
+  animation: Opacity2 0.6s ease forwards;
 }
 
 header h5 {
@@ -55,23 +58,25 @@ header h5 {
   font-size: 1.8rem;
   font-weight: 500;
   color: $black;
+  transition: all 1100ms ease;
+  animation: Opacity2 0.7s ease-in-out;
 }
 
 .header-svg {
   width: 85vw;
-  max-width: 400px;
+  max-width: 480px;
   text-align: center;
   display: flex;
   margin: 0 auto;
   padding: 0;
-  transition: all 250ms ease;
+  transition: all 2s ease;
 }
 
 .header-svg svg {
   text-align: center;
   height: 100%;
   width: 100%;
-  transition: all 250ms ease;
+  animation: Opacity 1.2s ease;
 }
 
 .gradient {
@@ -92,6 +97,29 @@ header h5 {
   clip-path: $offset-polygon;
 }
 
+@keyframes Opacity {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes Opacity2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 @keyframes Gradient {
   0% {

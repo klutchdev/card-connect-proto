@@ -57,15 +57,18 @@ const StyledMenu = styled.nav`
   overflow-y: scroll;
   box-shadow: #06060690 -2px 2px 10px;
   border-radius: 12px;
-  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-110%)")};
+  transition: all 350ms ease-in-out;
+  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-105%)")};
 
   @media screen and (min-width: 640px) and (max-width: 1366px) {
     width: 40vw;
-    border-radius: 12px;
+    height: 35%;
+    border-radius: 14px;
   }
 
   @media screen and(min-width: 1367px) and (max-width: 2580px) {
-    width: 16vw;
+    width: 20vw;
+    height: 35%;
     border-radius: 16px;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(110%)")};
   }
@@ -84,7 +87,13 @@ const StyledMenu = styled.nav`
     transition: all 300ms linear;
     
     &:hover {
-      color: #0D0B1D90;
+      color: #0D0B1Daa;
+      font-size: 1.65rem;
+      padding: 0.5rem 1.5rem;
+      font-weight: 800;
+      outline: none;
+      border: none;
+      text-decoration: none;
     }
   }
 
@@ -103,17 +112,17 @@ const StyledMenu = styled.nav`
   h3 {
     margin: 0;
     color: #030303bb;
-    padding: 0.75rem 0 1rem 1rem;
+    padding: 1rem 0 0.5rem 1rem;
     letter-spacing: 0.1rem;
     text-align: left;
     transition: opacity 1s ease;
-    border-bottom: 1px #03030325 dashed;
-    font-size: 2.2rem;
+    ${"" /* border-bottom: 1px #03030325 dashed; */}
+    font-size: 2.5rem;
     font-family: 'Rubik', sans-serif;
   }
 
   h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-bottom: 1.25rem;
     padding-left: 0.25rem;
     margin: 0;
