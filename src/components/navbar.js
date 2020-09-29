@@ -52,13 +52,16 @@ const StyledMenu = styled.nav`
   margin: 0;
   padding: 0;
   text-align: left;
-  background: #fefefefc;
+  background: #fcfcfcfc;
   box-shadow: none;
   overflow-y: scroll;
+  box-shadow: #06060690 -2px 2px 10px;
+  border-radius: 16px;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
 
   @media screen and (min-width: 768px) and (max-width: 1366px) {
     width: 40vw;
+    border-radius: 16px;
   }
 
   a {
@@ -144,9 +147,14 @@ const StyledMenuToggle = styled.button`
   cursor: pointer;
   transition: all 400ms ease;
 
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
+    right: 4vw;
+    top: 1.25rem;
+  }
   &:focus {
     outline: none;
   }
+  
 
   div {
     z-index: 10;
