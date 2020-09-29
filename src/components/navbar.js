@@ -43,7 +43,7 @@ const Navbar = ({ hideSignUp, children }) => {
 const StyledMenu = styled.nav`
   z-index: 9;
   height: 90%;
-  width: 96%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -61,13 +61,13 @@ const StyledMenu = styled.nav`
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-110%)")};
 
   @media screen and (min-width: 640px) and (max-width: 1366px) {
-    width: 60vw;
-    height: 70vh;
+    width: 60%;
+    height: 70%;
     border-radius: 14px;
   }
 
   @media screen and(min-width: 1367px) and (max-width: 2580px) {
-    width: 25vw;
+    width: 25%;
     height: 50%;
     border-radius: 16px;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(110%)")};
