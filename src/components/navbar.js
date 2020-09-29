@@ -64,6 +64,11 @@ const StyledMenu = styled.nav`
     border-radius: 12px;
   }
 
+  @media screen and(min-width: 768px) and(max-width: 1366px) {
+    width: 16vw;
+    border-radius: 12px;
+  }
+
   a {
     margin: 0;
     font-size: 2rem;
