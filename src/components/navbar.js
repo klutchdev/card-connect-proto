@@ -72,11 +72,11 @@ const StyledMenu = styled.nav`
 
   a {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: sans-serif;
     text-transform: uppercase;
-    padding: 0.6rem 1.5rem;
-    letter-spacing: 0.25rem;
+    padding: 0.5rem 1.5rem;
+    letter-spacing: 0.15rem;
     text-align: left;
     font-weight: 500;
     color: #0D0B1D35;
