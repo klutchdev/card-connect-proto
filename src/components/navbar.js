@@ -57,7 +57,7 @@ const StyledMenu = styled.nav`
   overflow-y: scroll;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
     width: 40vw;
   }
 
