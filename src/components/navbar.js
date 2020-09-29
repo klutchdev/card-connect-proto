@@ -57,16 +57,17 @@ const StyledMenu = styled.nav`
   overflow-y: scroll;
   box-shadow: #06060690 -2px 2px 10px;
   border-radius: 12px;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(110%)")};
+  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(110%)")};
 
   @media screen and (min-width: 768px) and (max-width: 1366px) {
     width: 32vw;
     border-radius: 12px;
   }
 
-  @media screen and(min-width: 768px) and(max-width: 1366px) {
+  @media screen and(min-width: 1366px) {
     width: 16vw;
     border-radius: 12px;
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(110%)")};
   }
 
   a {
