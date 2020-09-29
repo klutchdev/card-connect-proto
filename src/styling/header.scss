@@ -110,3 +110,12 @@ header h5 {
     background-position: 33% 0%
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+
+  header h2,
+  header h3,
+  header h5 {
+    font-size: 200%;
+  }
+}
