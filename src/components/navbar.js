@@ -42,7 +42,7 @@ function Navbar({ hideSignUp, children }) {
 
 const StyledMenu = styled.nav`
   z-index: 9;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,12 @@ const StyledMenu = styled.nav`
   text-align: left;
   background: #fefefefc;
   box-shadow: none;
+  overflow-y: scroll;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 40vw;
+  }
 
   a {
     margin: 0;
@@ -83,7 +88,7 @@ const StyledMenu = styled.nav`
     color: #030303bb;
     text-decoration: none;
     transition: color 0.3s linear;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
   }
 
   h3 {
@@ -94,6 +99,8 @@ const StyledMenu = styled.nav`
     text-align: left;
     transition: opacity 1s ease;
     border-bottom: 1px #03030325 dashed;
+    font-size: 2.2rem;
+    font-family: 'Rubik', sans-serif;
   }
 
   h4 {
@@ -126,7 +133,7 @@ const StyledMenuToggle = styled.button`
   padding: 0;
   position: ${({ open }) => (open ? "fixed" : "absolute")};
   top: 1rem;
-  right: 10vw;
+  right: 8vw;
   width: 2rem;
   height: 2rem;
   display: flex;

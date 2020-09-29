@@ -32,7 +32,7 @@ function ContactForm() {
 
           <div className="company">
             <label>
-              and I`&apos;`m from
+              and I&apos;m from
               <input
                 type="text"
                 name="company"
@@ -67,11 +67,11 @@ function ContactForm() {
               <input
                 type="phonenumber"
                 name="phone"
-                placeholder="1(555)555-5555"
+                placeholder="12225551234"
                 ref={register({
                   pattern: {
                     value: /([\d]{0,1}[(.-]?[\d]{3}[).-\s]?[\d]{3}[.-]?[\d]{4})/g,
-                    message: "Enter a phone number",
+                    message: "* Enter a phone number",
                   },
                 })}
               />
@@ -97,13 +97,9 @@ function ContactForm() {
             {errors.email && errors.email.message}
           </div>
 
-          <div className="form-button-wrapper">
-            <button className="form-button" type="submit">
-              SEND
-            </button>
-            <br />
-            <br />
-          </div>
+          <button className="form-button" type="submit">
+            SEND
+          </button>
         </div>
       </form>
     </div>
