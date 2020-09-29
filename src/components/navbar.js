@@ -61,14 +61,14 @@ const StyledMenu = styled.nav`
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-105%)")};
 
   @media screen and (min-width: 640px) and (max-width: 1366px) {
-    width: 40vw;
-    height: 35%;
+    width: 45vw;
+    height: 60%;
     border-radius: 14px;
   }
 
   @media screen and(min-width: 1367px) and (max-width: 2580px) {
-    width: 20vw;
-    height: 35%;
+    width: 25vw;
+    height: 50%;
     border-radius: 16px;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(110%)")};
   }

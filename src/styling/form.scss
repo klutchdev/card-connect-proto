@@ -99,3 +99,10 @@ input {
     filter: grayscale(0);
   }
 }
+
+@media screen and (min-width: 640px) and (max-width: 1366px) {
+  .form-button {
+    width: 20vw;
+  }
+
+}
