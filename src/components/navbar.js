@@ -43,7 +43,7 @@ const Navbar = ({ hideSignUp, children }) => {
 const StyledMenu = styled.nav`
   z-index: 9;
   height: 75vh;
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   position: fixed;
