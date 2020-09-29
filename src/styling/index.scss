@@ -134,6 +134,7 @@ li>ul {
   clip-path: polygon(0 4%, 0 100%, 100% 96.5%, 100% 0%, 100% 0);
   transition: all 1.7s ease-in-out;
   animation: bg 2s ease both 2s;
+  box-shadow: #16161650 -1px -1px 12px;
 }
 
 .security-bg {
@@ -160,6 +161,7 @@ li>ul {
   clip-path: polygon(0 6%, 0 100%, 100% 95%, 100% 0%, 100% 0);
   transition: all 3s ease-in-out;
   animation: bg3 2.1s ease both 4s;
+  box-shadow: #16161625 -1px -1px 12px;
   ;
 }
 
